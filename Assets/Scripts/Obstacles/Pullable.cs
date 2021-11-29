@@ -18,6 +18,7 @@ public class Pullable : MonoBehaviour
         float y = puller.transform.position.y + 180f;
         Vector3 lookAt = new Vector3(0f, y, 0f);
         puller.transform.LookAt(lookAt);
+
         StartCoroutine(ChangeParent(puller));
 
     }
@@ -29,6 +30,7 @@ public class Pullable : MonoBehaviour
 
     IEnumerator ChangeParent(GameObject puller)
     {
+
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
         transform.parent = puller.transform;

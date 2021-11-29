@@ -58,7 +58,6 @@ public class Player_Pull : MonoBehaviour
         }
         else
         {
-            Debug.Log("Pulling");
             Pullable pullable = hit.gameObject.GetComponent<Pullable>();
             if(pullable != null)
             {
