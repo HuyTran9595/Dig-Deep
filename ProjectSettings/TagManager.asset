@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Lever
+  - Water
+  - Underwater
+  - Level_1_GameManager
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - UI
   - Pullable
   - Player
-  - 
+  - Lever
   - 
   - 
   - 
