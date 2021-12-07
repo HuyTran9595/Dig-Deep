@@ -8668,7 +8668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 361072280348411397, guid: c3edc8b1966c8054fa2d329b1f0d6750, type: 3}
       propertyPath: m_Text
-      value: 'Reset Game
+      value: 'Reset Level
 
 '
       objectReference: {fileID: 0}
@@ -10372,50 +10372,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1297385193404726076, guid: cd889ec9b073f8448b6d32eea1d40638, type: 3}
   m_PrefabInstance: {fileID: 1794523427}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1809005993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1809005994}
-  - component: {fileID: 1809005995}
-  m_Layer: 0
-  m_Name: Game Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1809005994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809005993}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.29, y: 1, z: -0.009999998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1809005995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809005993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac5d50ab0045d040be4f91c727ba54d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameMenuCanvas: {fileID: 1887164592}
 --- !u!1 &1821649625
 GameObject:
   m_ObjectHideFlags: 0
@@ -12639,6 +12595,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346c06c0e30e9a144ab33817468a5de1, type: 3}
+--- !u!1001 &7564766427923224911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7564766429698401508, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: GameMenuCanvas
+      value: 
+      objectReference: {fileID: 1887164592}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401509, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564766429698401510, guid: 2205236c21ad2164d90414009983bba6, type: 3}
+      propertyPath: m_Name
+      value: Game Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2205236c21ad2164d90414009983bba6, type: 3}
 --- !u!1001 &8414948243559752568
 PrefabInstance:
   m_ObjectHideFlags: 0
