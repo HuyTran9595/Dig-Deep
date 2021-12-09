@@ -8,6 +8,8 @@ TagManager:
   - Water
   - Underwater
   - Level_1_GameManager
+  - Fire
+  - Prop
   layers:
   - Default
   - TransparentFX
