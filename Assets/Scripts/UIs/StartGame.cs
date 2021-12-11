@@ -19,7 +19,7 @@ public class StartGame : MonoBehaviour
 
         if(gameData.lastSceneOpened != "Level 1")
         {
-            nextLevelButton.SetActive(false);
+            //nextLevelButton.SetActive(false);
         }
         if(gameData.lastSceneOpened == "Level 2")
         {
