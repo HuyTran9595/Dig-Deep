@@ -24,7 +24,7 @@ public class Back : MonoBehaviour
 
     public void Return()
     {
-        Logo.SetActive(true);
+        //Logo.SetActive(true);
         Ma_Menu.SetActive(true);
         this.gameObject.SetActive(false);
     }
