@@ -39,10 +39,10 @@ public class Player_Controller : MonoBehaviour
         Ver = Input.GetAxisRaw("Vertical");
         Move_Dir = new Vector3(Hor, 0, Ver).normalized;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(transform.up * Jump_Speed, ForceMode.Impulse);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    rb.AddForce(transform.up * Jump_Speed, ForceMode.Impulse);
+        //}
 
         if (Move_Dir.magnitude >= 0.1f)
         {

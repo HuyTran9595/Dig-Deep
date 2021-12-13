@@ -14,7 +14,7 @@ public class Player_Pull : MonoBehaviour
         //switch pulling mode
         if(Input.GetKeyDown(KeyCode.E)){
             isPulling = !isPulling;
-            Debug.Log("is pulling = " + isPulling);
+            //Debug.Log("is pulling = " + isPulling);
 
             if (!isPulling)//we just cancel pulling
             {
@@ -65,6 +65,11 @@ public class Player_Pull : MonoBehaviour
                 beingPulled.OnPulling(this.gameObject);
             }
         }
+    }
+
+    public bool IsPulling()
+    {
+        return isPulling;
     }
 
 }

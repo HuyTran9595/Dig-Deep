@@ -25,6 +25,14 @@ public class StartGame : MonoBehaviour
         {
             StartLevelName = gameData.lastSceneOpened;
         }
+        if (gameData.lastSceneOpened == "Level 3")
+        {
+            StartLevelName = gameData.lastSceneOpened;
+        }
+        if (gameData.lastSceneOpened == "Level 4")
+        {
+            StartLevelName = gameData.lastSceneOpened;
+        }
 
     }
 

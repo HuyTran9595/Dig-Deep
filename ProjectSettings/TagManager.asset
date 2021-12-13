@@ -10,6 +10,9 @@ TagManager:
   - Level_1_GameManager
   - Fire
   - Prop
+  - Blockage 1
+  - Blockage 2
+  - ExplosivePotion
   layers:
   - Default
   - TransparentFX
@@ -20,9 +23,9 @@ TagManager:
   - Pullable
   - Player
   - Lever
-  - 
-  - 
-  - 
+  - PressurePlate
+  - Table
+  - Box
   - 
   - 
   - 
