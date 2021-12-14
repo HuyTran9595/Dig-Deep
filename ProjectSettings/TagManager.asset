@@ -13,6 +13,8 @@ TagManager:
   - Blockage 1
   - Blockage 2
   - ExplosivePotion
+  - Cross
+  - Circle
   layers:
   - Default
   - TransparentFX

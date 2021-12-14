@@ -8,16 +8,26 @@ public class HoldObject : MonoBehaviour
     public bool isHolding;
     public GameObject holdableObject;
     public float throwForce;
+    public GameObject rangeCheck;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rangeCheck = this.transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isHolding)
+        {
+            rangeCheck.gameObject.SetActive(false);
+        }
+        else
+        {
+            rangeCheck.gameObject.SetActive(true);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             if (!isHolding && canHold)

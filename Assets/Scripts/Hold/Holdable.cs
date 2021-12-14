@@ -20,7 +20,7 @@ public class Holdable : MonoBehaviour
     {
         if (holder)
         {
-            this.transform.position = new Vector3( holder.transform.GetChild(1).position.x,holdingHeight, holder.transform.GetChild(1).position.z);
+            this.transform.position = new Vector3( holder.transform.GetChild(1).position.x, holder.transform.GetChild(1).position.y + holdingHeight, holder.transform.GetChild(1).position.z);
         }
         else
         {
