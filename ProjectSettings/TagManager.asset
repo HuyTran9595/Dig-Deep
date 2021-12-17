@@ -15,6 +15,8 @@ TagManager:
   - ExplosivePotion
   - Cross
   - Circle
+  - Sound Manager
+  - Background Music
   layers:
   - Default
   - TransparentFX

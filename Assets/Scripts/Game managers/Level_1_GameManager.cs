@@ -41,7 +41,7 @@ public class Level_1_GameManager : MonoBehaviour
     IEnumerator DestroyWater(float sec)
     {
         yield return new WaitForSeconds(sec);
-        Destroy(water.gameObject);
+        water.GetComponent<WaterDisappear>().ChangeStatus();
         underwater.SetActive(true);
     }
 }

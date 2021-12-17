@@ -5,10 +5,12 @@ using UnityEngine;
 public class Cauldron : MonoBehaviour
 {
     [SerializeField] GameObject door;
-
+    [SerializeField] GameObject explosion;
+    GameMusic gameMusic;
     private void Start()
     {
         door.SetActive(false);
+        gameMusic = GameObject.FindWithTag("Sound Manager").GetComponent<GameMusic>();
 
     }
 
@@ -16,9 +18,17 @@ public class Cauldron : MonoBehaviour
     {
         if(other.gameObject.name == "BluePotion")
         {
+            explosion.SetActive(true);
+            gameMusic.PlaySound(GameMusic.EXPLOSION_SOUND);
             door.SetActive(true);
-            Destroy(this.gameObject);
+            StartCoroutine(DestroyThis(0.5f));
         } 
     }
 
+
+    IEnumerator DestroyThis(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+        Destroy(this.gameObject);
+    }
 }
