@@ -7,6 +7,8 @@ public class BackgroundMusic : MonoBehaviour
 {
     public const int BACKGROUND_LEVEL1 = 0;
     public const int BACKGROUND_LEVEL3 = 1;
+    public const int BACKGROUND_LEVEL2 = 2;
+    public const int BACKGROUND_LEVEL4 = 3;
 
     //each game character should have a unique audio list
     [SerializeField] private List<AudioClip> audioClips;
@@ -26,6 +28,15 @@ public class BackgroundMusic : MonoBehaviour
         {
             PlaySound(BACKGROUND_LEVEL3);
         }
+        if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            PlaySound(BACKGROUND_LEVEL2);
+        }
+        if (SceneManager.GetActiveScene().name == "Level 4")
+        {
+            PlaySound(BACKGROUND_LEVEL4);
+        }
+
     }
 
     /// <summary>

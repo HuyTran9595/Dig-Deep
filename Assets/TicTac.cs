@@ -8,6 +8,8 @@ public class TicTac : MonoBehaviour
     public GameObject door;
     public GameObject wall;
     public GameObject barrel;
+    public GameObject explosion;
+    public GameMusic gameMusic;
 
     public bool active;
 
@@ -65,6 +67,12 @@ public class TicTac : MonoBehaviour
 
         if ((triggerBoxs[0].circle && triggerBoxs[4].circle)||(triggerBoxs[2].circle && triggerBoxs[3].circle))
         {
+            if (explosion)
+            {
+                explosion.SetActive(true);
+                gameMusic.PlaySound(GameMusic.EXPLOSION_SOUND);
+            }
+
             Destroy(wall);
             Destroy(barrel);
         }

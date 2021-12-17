@@ -12,7 +12,7 @@ public class PressurePlate : MonoBehaviour
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag =="Prop" && !active)
+        if ((collision.transform.tag =="Prop" || collision.transform.tag == "Player") && !active)
         {
             slidedoor.transform.position -= position;
 
@@ -22,7 +22,7 @@ public class PressurePlate : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.transform.tag == "Prop" && active)
+        if ((collision.transform.tag == "Prop" || collision.transform.tag == "Player") && active)
         {
             slidedoor.transform.position += position;
             active = false;
