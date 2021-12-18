@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
+    [SerializeField]
+    int index;
+
     GameData gameData;
     private void Start()
     {
@@ -25,7 +28,7 @@ public class Door : MonoBehaviour
     private void WinLevelSequence()
     {
         gameData.lastSceneOpened = SceneManager.GetActiveScene().name;
-        StartCoroutine(LoadWinScene());
+        SceneManager.LoadScene(index);
     }
 
     IEnumerator LoadWinScene()
